@@ -4,7 +4,7 @@ import Feature from '../Feature/Feature';
 const PriceOption = ({ option }) => {
     const { price, name, features } = option;
     return (
-        <div className='bg-blue-700 rounded-md p-4 text-white'>
+        <div className='bg-blue-400 rounded-md p-4 text-white'>
             <h2 className='text-center'>
                 <span className='text-5xl font-bold'>{price}</span>
 
@@ -15,7 +15,7 @@ const PriceOption = ({ option }) => {
                     features.map((feature, idx) => <Feature key={idx} feature={feature}></Feature>)
                 }
             </div>
-            <button className='btn mt-6 w-full py-2 font-bold hover:bg-green-700'>Bye Now</button>
+            <button className='btn mt-6 w-full py-2 font-bold hover:bg-gray-700'>Bye Now</button>
         </div>
     );
 };
